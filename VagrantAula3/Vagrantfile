@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
 	sudo puppet module install puppetlabs-vcsrepo
   SHELL
   
-  # Provisionando com Puppet (por padr„o, puppet buscar· pelo 
+  # Provisionando com Puppet (por padr√£o, puppet buscar√° pelo 
   # manifesto default.pp na pasta manifests)
   config.vm.provision "puppet"
   
