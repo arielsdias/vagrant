@@ -1,0 +1,10 @@
+﻿# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # Utilizando box arieldias/debiansenai
+  config.vm.box = "arieldias/debiansenai"
+  
+  # Utilizando provisionamento com puppet para instalar o apache
+  config.vm.provision "puppet"
+end
